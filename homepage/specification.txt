@@ -1,0 +1,20 @@
+HTML TAGS
+
+<p>
+<a href>
+<h1-h6>
+<br>
+<style>
+<span>
+<b>
+<img>
+
+CSS PROPERTIES
+
+Background Color
+Margin
+Font Color
+Font Size
+Bold
+Resize Image
+

@@ -1,0 +1,50 @@
+sort1 uses: Bubble Sort
+
+random5000.txt - 0.082s
+random10000.txt - 0.238s
+random50000.txt - 5.728s
+
+reversed5000.txt - 0.073s
+reversed10000.txt - 0.323s
+reversed50000.txt - 4.842s
+
+sorted5000.txt - 0.046s
+sorted10000.txt - 0.073s
+sorted50000.txt - 0.565s
+
+How do you know?: Large variance between best and worst case
+
+
+
+sort2 uses: Merge Sort
+
+random5000.txt - 0.035s
+random10000.txt - 0.072s
+random50000.txt - 0.424s
+
+reversed5000.txt - 0.056s
+reversed10000.txt - 0.093s
+reversed50000.txt - 0.534s
+
+sorted5000.txt - 0.033s
+sorted10000.txt - 0.104s
+sorted50000.txt - 0.483s
+
+How do you know?: Every case is similar
+
+
+sort3 uses: Selection Sort
+
+random5000.txt - 0.062s
+random10000.txt - 0.157s
+random50000.txt - 2.619s
+
+reversed5000.txt - 0.061s
+reversed10000.txt - 0.150s
+reversed50000.txt - 2.498s
+
+sorted5000.txt - 0.056s
+sorted10000.txt - 0.144s
+sorted50000.txt - 2.306s
+
+How do you know?: Best and worst cases are similar while still being overall slower than the other options for sorted

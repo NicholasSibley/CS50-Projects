@@ -1,0 +1,20 @@
+1.  If songs.db contains the top 100 songs of one listener from 2018, how would you characterize their audio aura?
+
+I'm not familiar with the scales used to measure the categories spotify has included in this database.  If we assume that 0 represents the lowest possible value for a scale,
+1.0 represents the highest value possible for the scale and .5 representing the overall average then we can draw conclusions based on the users average values for each of the categories.
+I wrote the following SQL query to return the averages of the danceability category, the energy category, and the valence category: SELECT AVG(danceability), AVG(ENERGY), AVG(valence)
+FROM songs;  This gives us an average danceability of ~0.72, an average energy of ~0.66, and an average valence of ~0.48.  Based on this information we can conclude that this user
+prefered songs with an above average danceability and a slightly above average energy.  They also preferred their songs to not be very emotionally upbeat as represented by the
+valence category.
+
+
+2.  Hypothesize about why the way you’ve calculated this aura might not be very representative of the listener. What better ways of calculating this aura would you propose?
+
+There are a few problems with calculating an "aura" in this way.  The first is that these cateogries are very subjective and have their values assigned by many different people.
+It's entirely possible for one person to rate "God's Plan" with a danceability of one value and then another person to give it's danceability a different value.  This could lead
+to situtations where songs that are ultimately very different still possess similar danceability, energy, or valence scores.  Another issue could be autoplay.  Imaginge someone
+listens to spotify when they go to sleep, but they don't turn it off.  It could autoplay all night long and put songs in their history that they may not have actually listened to
+were they awake.
+
+I think it might make more sense to only calculate the score based off of songs that the user has liked or favorited or maybe only based off of songs that they have listened to a
+certain number of times.
